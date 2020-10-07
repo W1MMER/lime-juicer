@@ -1,0 +1,383 @@
+{
+    "data": {
+        "id": "views::juicer::collectmap",
+        "type": "juicer_collect_map_view",
+        "attributes": {
+            "user": {
+                "id": "<USER ID>",
+                "type": "users",
+                "attributes": {
+                    "token": "<USER ID>",
+                    "phone_number": "<PHONE NUMBER>",
+                    "email_address": "<EMAIL>",
+                    "has_verified_email_address": true,
+                    "name": "<NAME>",
+                    "given_name": "<FIRST NAME>",
+                    "surname": "<LAST-NAME>",
+                    "default_payment_method": null,
+                    "referral_code": "<REFERRAL CODE>",
+                    "num_trips": 1,
+                    "edu": false,
+                    "subscription_item_states": [],
+                    "promotion_notification": true,
+                    "donation_profile": {
+                        "id": "<ID>",
+                        "type": "donation_profiles",
+                        "attributes": {
+                            "donation_type": "none",
+                            "donation_organizations": [],
+                            "total_donation_amount": {
+                                "currency_code": "USD",
+                                "amount": 0.0,
+                                "amount_str": "0.0",
+                                "currency_symbol": "$",
+                                "display_string": "$0"
+                            },
+                            "total_donation_amount_cents": null,
+                            "currency": null
+                        }
+                    },
+                    "pod_vehicle_banner_status": null,
+                    "juicer_profile_status": "active",
+                    "juicer_profile_initial_activated_at": "<ACTIVATION DATE>",
+                    "accepted_user_agreement_version": 2,
+                    "accepted_compliance_version": 0,
+                    "balance": {
+                        "currency_code": "<CURRENCY>",
+                        "amount": <AMOUNT>,
+                        "amount_str": "<AMOUNT>",
+                        "currency_symbol": "<SYMBOL>",
+                        "display_string": "<FRONTEND>"
+                    },
+                    "pending_balance": {
+                        "currency_code": "ILS",
+                        "amount": 0.0,
+                        "amount_str": "0.0",
+                        "currency_symbol": "<SYMBOL>",
+                        "display_string": "<FRONTEND>"
+                    },
+                    "new_juicer_earnings_amount": {
+                        "currency_code": "USD",
+                        "amount": 150.0,
+                        "amount_str": "150.0",
+                        "currency_symbol": "$",
+                        "display_string": "$150"
+                    },
+                    "new_juicer_earnings_promo_amount": "150",
+                    "new_juicer_earnings_promo_amount_cents": 15000,
+                    "new_juicer_earnings_promo_amount_cent": 15000,
+                    "new_juicer_earnings_promo_currency": "USD",
+                    "juicer_referral_type": null,
+                    "juicer_referral_code": "<JUICER REFERRAL CODE>",
+                    "juicer_referral_amount": null,
+                    "juicer_referral_amount_cents": null,
+                    "juicer_referral_currency": null,
+                    "balance_cents": <DK>,
+                    "pending_balance_cents": 0,
+                    "currency": "ILS",
+                    "show_group_ride": false,
+                    "id_verification_pending": false,
+                    "juicer_first_name": "<FIRST NAME>",
+                    "juicer_last_name": "<LAST NAME>",
+                    "juicer_phone_number": "<PHONE NUMBER>",
+                    "juicer_country_code": "<COUNTRY CODE>",
+                    "juicer_currency": "<CURRENCY>",
+                    "juicer_payment_profile": {
+                        "id": "<ID>",
+                        "type": "juicer_payment_profiles",
+                        "attributes": {
+                            "account_type": "portal",
+                            "last4": null
+                        }
+                    },
+                    "juicer_profile_has_limes": false,
+                    "juicer_stripe_account_type": "express",
+                    "juicer_stripe_login_url": null,
+                    "juicer_reserved_hotspot": null,
+                    "juicer_legal_entity": {},
+                    "enable_juicer_retrieval_workflow": true,
+                    "juicer_full_payout_serve_time": 420,
+                    "juicer_full_payout_battery_percentage": 95.0,
+                    "juicer_full_payout_dropoff_time": 240,
+                    "juicer_harvest_cap": 100,
+                    "juicer_level": 1,
+                    "juicer_level_progress": {
+                        "num_active_days": 0,
+                        "num_tasks": 0,
+                        "proportion_perfect_serves": 0
+                    },
+                    "juicer_fleet_relationship": null,
+                    "vat_enabled_region": false
+                }
+            },
+            "nearby_hotspots": [
+                {
+                    "id": "U6WDL56DLFZ4Q",
+                    "type": "juicer_hotspots",
+                    "attributes": {
+                        "destination_type": "Hotspot",
+                        "latitude": "-43.542446",
+                        "longitude": "172.628036",
+                        "radius": 32.1868,
+                        "capacity": 8,
+                        "remaining_capacity": 7,
+                        "selected_icon_usage_type": "juicer_hotspots_selected",
+                        "unselected_icon_usage_type": "juicer_hotspots_unselected",
+                        "reserved_unselected_icon_usage_type": "juicer_hotspots_reserved_unselected",
+                        "reserved_selected_icon_usage_type": "juicer_hotspots_reserved_selected",
+                        "place_name": "After Hours Veterinary Centre, veterinary care",
+                        "description": null,
+                        "image_url": "https://d1r9t42himsgro.cloudfront.net/juicer-deploy-photos/RA4UTQRYLDEKA/2018-10-26/3RXNSQCKBWUX7.jpeg",
+                        "reserver_id": null,
+                        "reserved_at": null,
+                        "reservation_time": "60",
+                        "priority": 0,
+                        "address": ""
+                    }
+                },
+            ],
+            "nearby_dropspots": [
+                {
+                    "id": "Y3B4VLNR26XRN",
+                    "type": "juicer_dropspots",
+                    "attributes": {
+                        "destination_type": "Dropspot",
+                        "latitude": "-43.538566",
+                        "longitude": "172.694125",
+                        "radius": 80.467,
+                        "capacity": 10000,
+                        "remaining_capacity": 8679,
+                        "selected_icon_usage_type": "juicer_dropspots_selected",
+                        "unselected_icon_usage_type": "juicer_dropspots_unselected",
+                        "place_name": "Lime Warehouse",
+                        "description": "Please drop the scooters to the right of first slider door. If you need assistance, please ring the bell on the front door. ",
+                        "image_url": "https://limebike-web-public-assets.s3-us-west-1.amazonaws.com/dropspots/VEIBA3SUB23OOHXV",
+                        "address": "2/120 Maces Rd"
+                    }
+                }
+            ],
+            "nearby_warehouses": [],
+            "icons": [
+                {
+                    "id": "23",
+                    "type": "icons",
+                    "attributes": {
+                        "url": "https://d22d5yy1i19g9i.cloudfront.net/icons/pin_warehouse.png?fingerprint=7f6bec60d166d3d7bd9bde199e6b0d41",
+                        "description": "",
+                        "description_icon_url": null,
+                        "description_link_url": null,
+                        "usage_type": "juicer_hotspots_reserved_selected"
+                    }
+                },
+                {
+                    "id": "22",
+                    "type": "icons",
+                    "attributes": {
+                        "url": "http://d22d5yy1i19g9i.cloudfront.net/icons/pin_hotspot_reserved@2x.png?fingerprint=7ad42027fd9279f9b5eafd3c838a879e",
+                        "description": "",
+                        "description_icon_url": null,
+                        "description_link_url": null,
+                        "usage_type": "juicer_hotspots_reserved_unselected"
+                    }
+                },
+                {
+                    "id": "12",
+                    "type": "icons",
+                    "attributes": {
+                        "url": "https://d22d5yy1i19g9i.cloudfront.net/icons/hotspot_orange_selected_empty.png?fingerprint=75b1faabe359a08d30fb4af259dca0f0",
+                        "description": "",
+                        "description_icon_url": null,
+                        "description_link_url": null,
+                        "usage_type": "juicer_hotspots_selected"
+                    }
+                },
+                {
+                    "id": "11",
+                    "type": "icons",
+                    "attributes": {
+                        "url": "https://d22d5yy1i19g9i.cloudfront.net/icons/hotspot_orange_empty.png?fingerprint=4f971459471c7f2122fac599b9eba9be",
+                        "description": "",
+                        "description_icon_url": null,
+                        "description_link_url": null,
+                        "usage_type": "juicer_hotspots_unselected"
+                    }
+                },
+                {
+                    "id": "20",
+                    "type": "icons",
+                    "attributes": {
+                        "url": "https://d22d5yy1i19g9i.cloudfront.net/icons/pin_warehouse_selected.png?fingerprint=195af5e8e4536ffa2f6779edb09e503f",
+                        "description": "",
+                        "description_icon_url": null,
+                        "description_link_url": null,
+                        "usage_type": "juicer_warehouses_selected"
+                    }
+                },
+                {
+                    "id": "21",
+                    "type": "icons",
+                    "attributes": {
+                        "url": "https://d22d5yy1i19g9i.cloudfront.net/icons/pin_warehouse.png?fingerprint=79d9e8c036441d114344adfa0bfb18fc",
+                        "description": "",
+                        "description_icon_url": null,
+                        "description_link_url": null,
+                        "usage_type": "juicer_warehouses_unselected"
+                    }
+                }
+            ],
+            "map_config": {
+                "id": "views::juicer::mapconfig",
+                "type": "juicer_map_config",
+                "attributes": {
+                    "cluster_view_enabled": true,
+                    "cluster_view_zoom_level": 12,
+                    "refresh_seconds": 10
+                }
+            }
+        }
+    },
+    "meta": {
+        "latest_user_agreement_version": "2",
+        "min_ios_version": "2.22.0",
+        "min_android_code": 1119,
+        "flags": "IOS_VERSION_V1.0,ANDROID_VERSION_V1.0",
+        "groups": {
+            "group_ride": false,
+            "area_rate_plan_on_scanner": true,
+            "backend_driven_trip_rating": true,
+            "bike_reservation": true,
+            "enable_promo_notification_optout": true,
+            "show_auto_reload": true,
+            "map_levels_v1": true,
+            "braze_integration": true,
+            "unlock_button_group": "white_bar",
+            "default_to_unlock_group": "control",
+            "show_battery_level_on_map": true,
+            "take_photo": "find_my_ride",
+            "short_stop": true,
+            "unlock_confirmation": false,
+            "parked_or_not": true,
+            "bluetooth_unlock": true,
+            "persist_rate_ride": true,
+            "branch_link_referral": true,
+            "fetch_end_trip_experience": true,
+            "no_header_map": true,
+            "donation_group": "control",
+            "long_pause_group": false,
+            "group_ride_max_rider_cap": "5",
+            "group_ride_v2": false,
+            "group_ride_revamp_two_point_one": false,
+            "group_ride_max_guest_cap": "10",
+            "id_scan_show_manual_delay_sec": 15,
+            "id_scanner": "google_vision",
+            "cvv_optional": false,
+            "group_ride_revamp": false,
+            "auto_reload_always_enabled": false,
+            "auto_reload_on_by_default": true,
+            "scooter_reservation": true,
+            "show_group_ride_tutorial": true,
+            "use_client_groups": false,
+            "use_moshi": false,
+            "android_trip_events_refactor": false,
+            "android_how_to_ride_tutorial": false,
+            "timeout_retry": false,
+            "auto_reload_experience_updates": true,
+            "cancel_reserve_red_button": true,
+            "new_method_completing_trip": true,
+            "show_loyalty_spend_points": false,
+            "show_loyalty": true,
+            "ride_history_with_pagination": true,
+            "show_self_help": false,
+            "remove_add_balance_confirmation": false,
+            "map_style_with_poi": false,
+            "comfort_ride_enabled": false,
+            "customized_speed_cap_enabled": false,
+            "recommend_nearby_bike_v2": true,
+            "server_side_id_verification": false,
+            "request_bluetooth_permission_at_unlock_screen": null,
+            "top_banner_carousel": false,
+            "use_banner_v2": true,
+            "group_ride_entry_point": "default",
+            "use_trip_summary_v2": false,
+            "use_new_microblink": true,
+            "use_tutorial_v2": false,
+            "use_app_refresh_theme": false,
+            "simplify_unlock_new_map_experience": false,
+            "map_improvements": {
+                "battery_sort": true,
+                "cache_zones": true,
+                "clustering": true,
+                "fetch_zones": false,
+                "icons": true
+            },
+            "use_referrals_v2": false,
+            "zone_messaging_enabled": false,
+            "enable_stripe_sca_flow": true,
+            "zip_code_country_selector": false,
+            "payment_billing_address": false,
+            "payment_creation_ui": true,
+            "payment_cardholder_name": false,
+            "apple_pay_address_ui": false,
+            "payments": {
+                "cvv_optional": false,
+                "payment_card_io_scan": null,
+                "payment_creation_ui": true,
+                "payment_billing_address": false,
+                "payment_cardholder_name": false,
+                "payment_zip_code": false
+            },
+            "apple_pay": true,
+            "enable_google_pay": false,
+            "card_scanner": null,
+            "klarna_payment_method": false,
+            "paypal_payment_method": false,
+            "payment_zip_code": false,
+            "map_balance_icon": false,
+            "juicer_satellite_mode": true,
+            "juicer_level_2": true,
+            "ios_juicer_rebalance_v1": false,
+            "android_juicer_rebalance_v1": false,
+            "juicer_hide_scooter_details": false,
+            "enable_juicer_mock_gps_blocker": true,
+            "enable_juicer_settings": true,
+            "enable_juicer_in_app_message": true,
+            "ios_juicer_multi_task_v1": true,
+            "android_juicer_multi_task_v1": true,
+            "complete_trip_before_take_photo": true,
+            "android_upload_juicer_attributes": true,
+            "enable_juicer_endpoint_v2": true,
+            "juicer_bluetooth_unlock": false,
+            "android_enable_backend_driven_cancel_task": true,
+            "android_tooltip_v2": true,
+            "android_enable_bulk_scan_of_deploy_tasks": false,
+            "ios_juicer_task_bundle": false,
+            "android_juicer_task_bundle": false,
+            "enable_juicer_vat_profile": false,
+            "enable_juicer_backend_banner": false,
+            "enable_juicer_in_app_funnel": false,
+            "use_backend_driven_earn_with_lime_button": false,
+            "use_backend_driven_switch_to_juicer_mode_button": false,
+            "juicer_earnings_notification": true,
+            "edit_email_magic_link": false
+        },
+        "trip_id": null,
+        "trip_status": null,
+        "group_id": null,
+        "group_ride_status": null,
+        "group_ride_version": "legacy",
+        "notifications": [],
+        "messages": [],
+        "country_code": "",
+        "user_agreement_version": 2,
+        "user_agreement_country_code": "",
+        "need_to_show_agreement": false,
+        "user_agreement_url": "https://li.me/user-agreement/",
+        "user_agreement_title": "We've Updated Our User Agreement",
+        "user_agreement_message": "By tapping \"I Agree\" You confirm that You have read, understood, and agreed to Lime’s updated User Agreement.",
+        "user_agreement_primary_button": "I Agree",
+        "user_agreement_view_terms_button": "View Agreement",
+        "need_to_show_group_ride_agreement": true,
+        "current_rental_id": null,
+        "current_rental_status": null
+    }
+}
