@@ -1,7 +1,7 @@
 {
     "data": {
-        "id": "views::juicer::collectmap",
-        "type": "juicer_collect_map_view",
+        "id": "views::juicer::deployview",
+        "type": "juicer_deploy_view",
         "attributes": {
             "user": {
                 "id": "<USER ID>",
@@ -112,22 +112,22 @@
             },
             "nearby_hotspots": [
                 {
-                    "id": "U6WDL56DLFZ4Q",
+                    "id": "7ACHD6G4ZQUIX",
                     "type": "juicer_hotspots",
                     "attributes": {
                         "destination_type": "Hotspot",
-                        "latitude": "-43.542446",
-                        "longitude": "172.628036",
+                        "latitude": "-43.529987",
+                        "longitude": "172.597763",
                         "radius": 32.1868,
-                        "capacity": 8,
-                        "remaining_capacity": 7,
+                        "capacity": 4,
+                        "remaining_capacity": 3,
                         "selected_icon_usage_type": "juicer_hotspots_selected",
                         "unselected_icon_usage_type": "juicer_hotspots_unselected",
                         "reserved_unselected_icon_usage_type": "juicer_hotspots_reserved_unselected",
                         "reserved_selected_icon_usage_type": "juicer_hotspots_reserved_selected",
-                        "place_name": "After Hours Veterinary Centre, veterinary care",
+                        "place_name": "Smilesville Cosmetic Orthodontics Invisalign Implants, dentist",
                         "description": null,
-                        "image_url": "https://d1r9t42himsgro.cloudfront.net/juicer-deploy-photos/RA4UTQRYLDEKA/2018-10-26/3RXNSQCKBWUX7.jpeg",
+                        "image_url": "https://d1r9t42himsgro.cloudfront.net/juicer-deploy-photos/MMZHKNFE34W7W/2018-11-09/4BWON4HLP6V5B.jpeg",
                         "reserver_id": null,
                         "reserved_at": null,
                         "reservation_time": "60",
@@ -135,6 +135,7 @@
                         "address": ""
                     }
                 },
+               ...
             ],
             "nearby_dropspots": [
                 {
