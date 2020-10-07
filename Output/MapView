@@ -113,218 +113,18 @@
             "reserved_vehicles": [],
             "vehicles": [
                 {
-                    "id": "GSIHP6X5FRIT5",
-                    "type": "juicer_bikes",
-                    "attributes": {
-                        "status": "locked",
-                        "plate_number": "850147",
-                        "latitude": -43.52376,
-                        "longitude": 172.637499,
-                        "last_activity_at": "2020-10-07T05:52:31.000Z",
-                        "last_trip_at": "2020-10-07T01:52:20.000Z",
-                        "type_name": "scooter",
-                        "battery_level": "super_low",
-                        "battery_percentage": 11,
-                        "meter_range": null,
-                        "icon_usage_type": null,
-                        "last_three": "147",
-                        "already_collected": false,
-                        "task_type": "ScooterChargeTask",
-                        "juicer_earnings_amount": null,
-                        "display_task": {
-                            "id": "LUJBQ3WH24AJ5",
-                            "type": "juicer_tasks",
-                            "attributes": {
-                                "bike": null,
-                                "task_type": "ScooterChargeTask",
-                                "due_at": null,
-                                "juicer_earnings_amount": {
-                                    "currency_code": "NZD",
-                                    "amount": 4.25,
-                                    "amount_str": "4.25",
-                                    "currency_symbol": "$",
-                                    "display_string": "$4.25"
-                                },
-                                "reservation": null,
-                                "reservation_time_seconds": 3600,
-                                "info_window": {
-                                    "title": "Charge XXX-147",
-                                    "description": "Charge and drop off at a LimeHub by 07:00 AM"
-                                },
-                                "expected_due_time": "2020-10-07T18:00:00.000Z",
-                                "status": "open",
-                                "juicer_earnings_currency": "NZD",
-                                "juicer_earnings_amount_cents": 425
-                            }
-                        },
-                        "has_physical_lock": false,
-                        "juicer_earnings_currency": null,
-                        "juicer_earnings_amount_cents": null
-                    }
-                },
-                {
-                    "id": "X5ZAPAJYYYTCP",
-                    "type": "juicer_bikes",
-                    "attributes": {
-                        "status": "locked",
-                        "plate_number": "830789",
-                        "latitude": -43.521931,
-                        "longitude": 172.633686,
-                        "last_activity_at": "2020-10-07T06:27:34.000Z",
-                        "last_trip_at": "2020-10-07T04:42:22.000Z",
-                        "type_name": "scooter",
-                        "battery_level": "super_low",
-                        "battery_percentage": 17,
-                        "meter_range": null,
-                        "icon_usage_type": null,
-                        "last_three": "789",
-                        "already_collected": false,
-                        "task_type": "ScooterChargeTask",
-                        "juicer_earnings_amount": null,
-                        "display_task": {
-                            "id": "WJN4DSSEWS3ST",
-                            "type": "juicer_tasks",
-                            "attributes": {
-                                "bike": null,
-                                "task_type": "ScooterChargeTask",
-                                "due_at": null,
-                                "juicer_earnings_amount": {
-                                    "currency_code": "NZD",
-                                    "amount": 4.25,
-                                    "amount_str": "4.25",
-                                    "currency_symbol": "$",
-                                    "display_string": "$4.25"
-                                },
-                                "reservation": null,
-                                "reservation_time_seconds": 3600,
-                                "info_window": {
-                                    "title": "Charge XXX-789",
-                                    "description": "Charge and drop off at a LimeHub by 07:00 AM"
-                                },
-                                "expected_due_time": "2020-10-07T18:00:00.000Z",
-                                "status": "open",
-                                "juicer_earnings_currency": "NZD",
-                                "juicer_earnings_amount_cents": 425
-                            }
-                        },
-                        "has_physical_lock": false,
-                        "juicer_earnings_currency": null,
-                        "juicer_earnings_amount_cents": null
-                    }
-                },
-                {
-                    "id": "UCJXNLHL47LGY",
-                    "type": "juicer_bikes",
-                    "attributes": {
-                        "status": "locked",
-                        "plate_number": "419226",
-                        "latitude": -43.519441,
-                        "longitude": 172.632558,
-                        "last_activity_at": "2020-10-07T06:21:22.000Z",
-                        "last_trip_at": "2020-10-07T04:15:09.000Z",
-                        "type_name": "scooter",
-                        "battery_level": "super_low",
-                        "battery_percentage": 19,
-                        "meter_range": null,
-                        "icon_usage_type": null,
-                        "last_three": "226",
-                        "already_collected": false,
-                        "task_type": "ScooterChargeTask",
-                        "juicer_earnings_amount": null,
-                        "display_task": {
-                            "id": "QG5HRIOYNYRZT",
-                            "type": "juicer_tasks",
-                            "attributes": {
-                                "bike": null,
-                                "task_type": "ScooterChargeTask",
-                                "due_at": null,
-                                "juicer_earnings_amount": {
-                                    "currency_code": "NZD",
-                                    "amount": 4.25,
-                                    "amount_str": "4.25",
-                                    "currency_symbol": "$",
-                                    "display_string": "$4.25"
-                                },
-                                "reservation": null,
-                                "reservation_time_seconds": 3600,
-                                "info_window": {
-                                    "title": "Charge XXX-226",
-                                    "description": "Charge and drop off at a LimeHub by 07:00 AM"
-                                },
-                                "expected_due_time": "2020-10-07T18:00:00.000Z",
-                                "status": "open",
-                                "juicer_earnings_currency": "NZD",
-                                "juicer_earnings_amount_cents": 425
-                            }
-                        },
-                        "has_physical_lock": false,
-                        "juicer_earnings_currency": null,
-                        "juicer_earnings_amount_cents": null
-                    }
-                },
-                {
-                    "id": "2CJQF35OTE2TA",
-                    "type": "juicer_bikes",
-                    "attributes": {
-                        "status": "locked",
-                        "plate_number": "765338",
-                        "latitude": -43.519151,
-                        "longitude": 172.635853,
-                        "last_activity_at": "2020-10-07T06:19:29.000Z",
-                        "last_trip_at": "2020-10-07T04:28:18.000Z",
-                        "type_name": "scooter",
-                        "battery_level": "low",
-                        "battery_percentage": 22,
-                        "meter_range": null,
-                        "icon_usage_type": null,
-                        "last_three": "338",
-                        "already_collected": false,
-                        "task_type": "ScooterChargeTask",
-                        "juicer_earnings_amount": null,
-                        "display_task": {
-                            "id": "KPDQBBUDPYVRL",
-                            "type": "juicer_tasks",
-                            "attributes": {
-                                "bike": null,
-                                "task_type": "ScooterChargeTask",
-                                "due_at": null,
-                                "juicer_earnings_amount": {
-                                    "currency_code": "NZD",
-                                    "amount": 4.25,
-                                    "amount_str": "4.25",
-                                    "currency_symbol": "$",
-                                    "display_string": "$4.25"
-                                },
-                                "reservation": null,
-                                "reservation_time_seconds": 3600,
-                                "info_window": {
-                                    "title": "Charge XXX-338",
-                                    "description": "Charge and drop off at a LimeHub by 07:00 AM"
-                                },
-                                "expected_due_time": "2020-10-07T18:00:00.000Z",
-                                "status": "open",
-                                "juicer_earnings_currency": "NZD",
-                                "juicer_earnings_amount_cents": 425
-                            }
-                        },
-                        "has_physical_lock": false,
-                        "juicer_earnings_currency": null,
-                        "juicer_earnings_amount_cents": null
-                    }
-                },
-                {
                     "id": "O7WF3EZAY2ALQ",
                     "type": "juicer_bikes",
                     "attributes": {
                         "status": "locked",
                         "plate_number": "670799",
-                        "latitude": -43.527539,
-                        "longitude": 172.617434,
-                        "last_activity_at": "2020-10-07T06:45:30.000Z",
-                        "last_trip_at": "2020-10-07T04:06:19.000Z",
+                        "latitude": <Latitude>,
+                        "longitude": <Longitude>,
+                        "last_activity_at": "2020-00-00T00:00:00.000Z", -- Date Changed
+                        "last_trip_at": "2020-00-00T00:00:00.000Z", -- Date Changed
                         "type_name": "scooter",
                         "battery_level": "super_low",
-                        "battery_percentage": 16,
+                        "battery_percentage": 15,
                         "meter_range": null,
                         "icon_usage_type": null,
                         "last_three": "799",
@@ -351,57 +151,7 @@
                                     "title": "Charge XXX-799",
                                     "description": "Charge and drop off at a LimeHub by 07:00 AM"
                                 },
-                                "expected_due_time": "2020-10-07T18:00:00.000Z",
-                                "status": "open",
-                                "juicer_earnings_currency": "NZD",
-                                "juicer_earnings_amount_cents": 425
-                            }
-                        },
-                        "has_physical_lock": false,
-                        "juicer_earnings_currency": null,
-                        "juicer_earnings_amount_cents": null
-                    }
-                },
-                {
-                    "id": "UG4OIUQOVV3TO",
-                    "type": "juicer_bikes",
-                    "attributes": {
-                        "status": "locked",
-                        "plate_number": "108373",
-                        "latitude": -43.515596,
-                        "longitude": 172.64284,
-                        "last_activity_at": "2020-10-07T06:34:05.000Z",
-                        "last_trip_at": "2020-10-06T12:06:54.000Z",
-                        "type_name": "scooter",
-                        "battery_level": "low",
-                        "battery_percentage": 23,
-                        "meter_range": null,
-                        "icon_usage_type": null,
-                        "last_three": "373",
-                        "already_collected": false,
-                        "task_type": "ScooterChargeTask",
-                        "juicer_earnings_amount": null,
-                        "display_task": {
-                            "id": "WZIS774KMTZV4",
-                            "type": "juicer_tasks",
-                            "attributes": {
-                                "bike": null,
-                                "task_type": "ScooterChargeTask",
-                                "due_at": null,
-                                "juicer_earnings_amount": {
-                                    "currency_code": "NZD",
-                                    "amount": 4.25,
-                                    "amount_str": "4.25",
-                                    "currency_symbol": "$",
-                                    "display_string": "$4.25"
-                                },
-                                "reservation": null,
-                                "reservation_time_seconds": 3600,
-                                "info_window": {
-                                    "title": "Charge XXX-373",
-                                    "description": "Charge and drop off at a LimeHub by 07:00 AM"
-                                },
-                                "expected_due_time": "2020-10-07T18:00:00.000Z",
+                                "expected_due_time": "2020-00-00T00:00:00.000Z", -- Date Changed
                                 "status": "open",
                                 "juicer_earnings_currency": "NZD",
                                 "juicer_earnings_amount_cents": 425
@@ -418,10 +168,10 @@
                     "attributes": {
                         "status": "maintenance",
                         "plate_number": "689185",
-                        "latitude": -43.529889,
-                        "longitude": 172.639447,
-                        "last_activity_at": "2020-10-07T06:01:23.000Z",
-                        "last_trip_at": "2020-10-07T06:01:20.000Z",
+                        "latitude": -43.52985,
+                        "longitude": 172.639455,
+                        "last_activity_at": "2020-00-00T00:00:00.000Z", -- Date Changed
+                        "last_trip_at": "2020-00-00T00:00:00.000Z", -- Date Changed
                         "type_name": "scooter",
                         "battery_level": "medium",
                         "battery_percentage": 32,
@@ -451,7 +201,7 @@
                                     "title": "Retrieve XXX-185",
                                     "description": "Drop off at a LimeBase within 12 hours"
                                 },
-                                "expected_due_time": "2020-10-07T18:46:08.617Z",
+                                "expected_due_time": "2020-00-00T00:00:00.000Z", -- Date Changed
                                 "status": "open",
                                 "juicer_earnings_currency": "NZD",
                                 "juicer_earnings_amount_cents": 300
