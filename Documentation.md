@@ -13,7 +13,7 @@ Login is in two step:
 + Request an OTP code that is sent to you by SMS
 + Send back the OTP code to get an Auth token
 
-#### Request sms code
+#### Request SMS code
 
 **Method**: `GET`
 
@@ -85,7 +85,7 @@ curl --request POST \
             "num_trips": 0,
             "edu": false,
             "subscription_item_states": [],
-            "juicer_profile_status": active,
+            "juicer_profile_status": active, --- This needs to be active to get juicable scooters.
             "juicer_profile_initial_activated_at": <ACTIVATION DATE>,
             "balance_cents": 0,
             "pending_balance_cents": 0,
@@ -332,50 +332,8 @@ curl --location --request GET 'https://juicer.lime.bike/api/rider/v2/juicer/view
                     "cancellation_penalty_due_time": null
                 }
             },
-            "icons": [
-                {
-                    "id": "10",
-                    "type": "icons",
-                    "attributes": {
-                        "url": "https://d22d5yy1i19g9i.cloudfront.net/icons/pin_green_dark_blank.png?fingerprint=d5a9c9c806293f7c90c9ebd4f9bae0bf",
-                        "description": "",
-                        "description_icon_url": null,
-                        "description_link_url": null,
-                        "usage_type": "juicer_earnings_bike_high"
-                    }
-                },
-                ...
-            ],
-            "map_config": {
-                "id": "views::juicer::mapconfig",
-                "type": "juicer_map_config",
-                "attributes": {
-                    "cluster_view_enabled": true,
-                    "cluster_view_zoom_level": 12,
-                    "refresh_seconds": 10
-                }
-            }
-        }
-    },
-    "meta": {
-        "latest_user_agreement_version": "2",
-        "min_ios_version": "2.22.0",
-        "min_android_code": 1119,
-        "flags": "IOS_VERSION_V1.0,ANDROID_VERSION_V1.0",
-        "groups": {
-            "recommend_nearby_bike_v2": true,
-            ...
-            },
-            "use_referrals_v2": false,
-            ...
-            },
-            "apple_pay": true,
-            ...
-        },
-        "trip_id": null,
-        ...
-    }
-}
+         ...
+       }
 ```
 
 ## Get LimeHub Locations
@@ -578,48 +536,6 @@ curl --location --request GET 'https://juicer.lime.bike/api/rider/v2/juicer/view
                 }
             ],
             "nearby_warehouses": [],
-            "icons": [
-                {
-                    "id": "23",
-                    "type": "icons",
-                    "attributes": {
-                        "url": "https://d22d5yy1i19g9i.cloudfront.net/icons/pin_warehouse.png?fingerprint=7f6bec60d166d3d7bd9bde199e6b0d41",
-                        "description": "",
-                        "description_icon_url": null,
-                        "description_link_url": null,
-                        "usage_type": "juicer_hotspots_reserved_selected"
-                    }
-                },
-                ...
-            ],
-            "map_config": {
-                "id": "views::juicer::mapconfig",
-                "type": "juicer_map_config",
-                "attributes": {
-                    "cluster_view_enabled": true,
-                    "cluster_view_zoom_level": 12,
-                    "refresh_seconds": 10
-                }
-            }
-        }
-    },
-    "meta": {
-        "latest_user_agreement_version": "2",
-        "min_ios_version": "2.22.0",
-        "min_android_code": 1119,
-        "flags": "IOS_VERSION_V1.0,ANDROID_VERSION_V1.0",
-        "groups": {
-            "recommend_nearby_bike_v2": true,
-            ...
-            },
-            "use_referrals_v2": false,
-            ...
-            },
-            "apple_pay": true,
-            ...
-        },
-        "trip_id": null,
-        ...
-    }
+         ...
 }
 ```
