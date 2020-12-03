@@ -117,47 +117,18 @@ _limebike-web_session	U0pwQlVjcVRwMXZUTWovcHh3U251MERYTGE2dWpMdFdmNW9sL0d4SHBRVG
 
 `email=<YOUR-EMAIL>&name=Lime%20Rider&password=<YOUR-PASSWORD>&platform=iOS`
 
+**Cookie**:
+
+```
+_limebike-web_session	U0pwQlVjcVRwMXZUTWovcHh3U251MERYTGE2dWpMdFdmNW9sL0d4SHBRVGtZd2VXN20yMjhJczhlR21nUkVHczlEREUweGNpYmtEWVFvQXBoQVNuRWdZWkVBajJPaHhDeStuUmttYVdYYWVsRDJEMUZvNE5YNU4xc1FlcjlDMi8xOVNMcDM3M3JhQWd0TDF2OWphMGR3PT0tLTBDYUtNeUJLcXRmNVd4YnorSEhlTWc9PQ%3D%3D--c8889db210d22bb4a96307b74d39c4b64d48777f
+```
+
 **Example**
 
 ```
 curl --location --request POST 'https://web-production.lime.bike/api/rider/v1/login' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data 'email=<YOUR-EMAIL>&name=Lime%20Rider&password=<YOUR-PASSWORD>&platform=iOS'
-```
-
-```JSON
-{
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX3Rva2VuIjoiRk9PQkFSRUlSWkhBMiIsImxvZ2luX2NvdW50IjoyfQ.K5nmvUu92hYXQyeYG6O0rqo0ef2mkp7PMdtp9NrgwOE",
-    "user": {
-        "id": "FOOBAREIRZHA2",
-        "type": "users",
-        "attributes": {
-            "token": "FOOBAREIRZHA2",
-            "phone_number": "33612345678",
-            "email_address": null,
-            "has_verified_email_address": false,
-            "name": "Lime Rider",
-            "given_name": "Lime",
-            "surname": "Rider",
-            "default_payment_method": null,
-            "referral_code": "REZHETH",
-            "num_trips": 0,
-            "edu": false,
-            "subscription_item_states": [],
-            "juicer_profile_status": null,
-            "juicer_profile_initial_activated_at": null,
-            "balance_cents": 0,
-            "pending_balance_cents": 0,
-            "currency": "USD"
-        }
-    }
-}
-```
-
-Cookie
-
-```
-_limebike-web_session	U0pwQlVjcVRwMXZUTWovcHh3U251MERYTGE2dWpMdFdmNW9sL0d4SHBRVGtZd2VXN20yMjhJczhlR21nUkVHczlEREUweGNpYmtEWVFvQXBoQVNuRWdZWkVBajJPaHhDeStuUmttYVdYYWVsRDJEMUZvNE5YNU4xc1FlcjlDMi8xOVNMcDM3M3JhQWd0TDF2OWphMGR3PT0tLTBDYUtNeUJLcXRmNVd4YnorSEhlTWc9PQ%3D%3D--c8889db210d22bb4a96307b74d39c4b64d48777f
 ```
 
 ## Get low battery scooters by lat/lng
