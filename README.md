@@ -1,19 +1,17 @@
 # Lime Juicer API Documentation
 
-**Base URL for login**: `https://web-production.lime.bike/api/rider`
-
-## Methods
-
-### Login
+## Login
 
 :warning: You will need a Lime account with juicer mode enabled to get locations of low battery scooters :warning:
 
-Login is in two step:
+**Base URL for login**: `https://web-production.lime.bike/api/rider`
+
+Login requires two steps:
 
 + Request an OTP code that is sent to you by SMS
 + Send back the OTP code to get an Auth token
 
-#### Request SMS code
+### Request SMS code
 
 **Method**: `GET`
 
@@ -35,7 +33,7 @@ curl --request GET \
   --url 'https://web-production.lime.bike/api/rider/v1/login?phone=%2B33612345678'
 ```
 
-#### Send back OTP code
+### Send back OTP code
 
 **Method**: `POST`
 
@@ -131,7 +129,7 @@ curl --location --request POST 'https://web-production.lime.bike/api/rider/v1/lo
 --data 'email=<YOUR-EMAIL>&name=Lime%20Rider&password=<YOUR-PASSWORD>&platform=iOS'
 ```
 
-## Get low battery scooters by lat/lng
+## Get harvestable vehicles
 
 :warning: Auth (bearer AND cookie) are mandatory for this endpoint :warning:
 
@@ -153,7 +151,7 @@ curl --location --request POST 'https://web-production.lime.bike/api/rider/v1/lo
 
 **Parameters**:
 
-| Parameters           | Descriptions | Mandatory | Remarks                                                             |
+| Parameters           | Type         | Mandatory | Remarks                                                             |
 | -------------------- | ------------ | :-------: |---------------------------------------------------------------------|
 | filter               | Latitude     | X         | The value for this is `%2A`                                         |
 | ne_lat               | Latitude     | X         | Bounding box for map; apparently ignored in favor of zoom parameter |
@@ -251,7 +249,7 @@ The dates have been changed in this example output.
 
 **Parameters**:
 
-| Parameters           | Descriptions | Mandatory | Remarks                                                             |
+| Parameters           | Type         | Mandatory | Remarks                                                             |
 | -------------------- | ------------ | :-------: |---------------------------------------------------------------------|
 | filter               | Latitude     | X         | The value for this is `%2A`                                         |
 | ne_lat               | Latitude     | X         | Bounding box for map; apparently ignored in favor of zoom parameter |
@@ -265,7 +263,7 @@ The dates have been changed in this example output.
 **Example**
 
 ```bash
-curl --location --request GET 'https://juicer.lime.bike/api/rider/v2/juicer/views/deploy?ne_lat=<NE-LAT>&ne_lng=<NE-LNG>&sw_lat=<SW-LAT>&sw_lng=<SW-LNG>&user_latitude=<USER-LAT>&user_longitude=<USER-LNG>&zoom=14.03357&filter=%2A' \
+curl --location --request GET 'https://juicer.lime.bike/api/rider/v2/juicer/views/deploy?ne_lat=<NE-LAT>&ne_lng=<NE-LNG>&sw_lat=<SW-LAT>&sw_lng=<SW-LNG>&user_latitude=<USER-LAT>&user_longitude=<USER-LNG>&zoom=14&filter=%2A' \
 --header 'Authorization: Bearer <TOKEN>' \
 --header '_limebike-web_session	U0pwQlVjcVRwMXZUTWovcHh3U251MERYTGE2dWpMdFdmNW9sL0d4SHBRVGtZd2VXN20yMjhJczhlR21nUkVHczlEREUweGNpYmtEWVFvQXBoQVNuRWdZWkVBajJPaHhDeStuUmttYVdYYWVsRDJEMUZvNE5YNU4xc1FlcjlDMi8xOVNMcDM3M3JhQWd0TDF2OWphMGR3PT0tLTBDYUtNeUJLcXRmNVd4YnorSEhlTWc9PQ%3D%3D--c8889db210d22bb4a96307b74d39c4b64d48777f'
 ```
@@ -319,3 +317,21 @@ curl --location --request GET 'https://juicer.lime.bike/api/rider/v2/juicer/view
                         "address": "2/120 Maces Rd"
                     }
 ```
+
+## View Collected Limes
+
+**URL**: `https://web-production.lime.bike/api/rider/v1/juicer/views/collected`
+
+**Method**: `GET`
+
+**Header**:
+
+| Header        | Value        | Mandatory |
+| ------------- | ------------ | :-------: |
+| authorization | Bearer TOKEN | X         |
+
+**Cookie**:
+
+| Cookie                | Mandatory |
+| --------------------- | :-------: |
+| _limebike-web_session | X         |
