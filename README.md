@@ -99,11 +99,13 @@ Cookie
 _limebike-web_session	U0pwQlVjcVRwMXZUTWovcHh3U251MERYTGE2dWpMdFdmNW9sL0d4SHBRVGtZd2VXN20yMjhJczhlR21nUkVHczlEREUweGNpYmtEWVFvQXBoQVNuRWdZWkVBajJPaHhDeStuUmttYVdYYWVsRDJEMUZvNE5YNU4xc1FlcjlDMi8xOVNMcDM3M3JhQWd0TDF2OWphMGR3PT0tLTBDYUtNeUJLcXRmNVd4YnorSEhlTWc9PQ%3D%3D--c8889db210d22bb4a96307b74d39c4b64d48777f
 ```
 
-#### Login with Email
+### Login with Email
+
+#### Send Magic Link
 
 **Method**: `POST`
 
-**Path**: `/v1/login`
+**Path**: `/v2/onboarding/magic-link`
 
 **Header**:
 
@@ -113,7 +115,7 @@ _limebike-web_session	U0pwQlVjcVRwMXZUTWovcHh3U251MERYTGE2dWpMdFdmNW9sL0d4SHBRVG
 
 **Body**:
 
-`email=<YOUR-EMAIL>&name=Lime%20Rider&password=<YOUR-PASSWORD>&platform=iOS`
+`email=<your-email>&user_agreement_country_code=US&user_agreement_version=4`
 
 **Cookie**:
 
@@ -124,9 +126,41 @@ _limebike-web_session	U0pwQlVjcVRwMXZUTWovcHh3U251MERYTGE2dWpMdFdmNW9sL0d4SHBRVG
 **Example**
 
 ```
-curl --location --request POST 'https://web-production.lime.bike/api/rider/v1/login' \
---header 'Content-Type: application/x-www-form-urlencoded' \
---data 'email=<YOUR-EMAIL>&name=Lime%20Rider&password=<YOUR-PASSWORD>&platform=iOS'
+curl 'https://web-production.lime.bike/api/rider/v2/onboarding/magic-link' \
+-X POST \
+-H 'Content-Type: application/x-www-form-urlencoded; charset=utf-8' \
+-d 'email=<your-email>&user_agreement_country_code=US&user_agreement_version=4'
+```
+
+#### Use Magic Link
+
+**Method**: `POST`
+
+**Path**: `/v2/onboarding/login`
+
+**Header**:
+
+| Header       | Value                             | Mandatory |
+| ------------ | --------------------------------- | :-------: |
+| Content-Type | application/x-www-form-urlencoded | X         |
+
+**Body**:
+
+`magic_link_token=<your-magic-link-token`
+
+**Cookie**:
+
+```
+_limebike-web_session	U0pwQlVjcVRwMXZUTWovcHh3U251MERYTGE2dWpMdFdmNW9sL0d4SHBRVGtZd2VXN20yMjhJczhlR21nUkVHczlEREUweGNpYmtEWVFvQXBoQVNuRWdZWkVBajJPaHhDeStuUmttYVdYYWVsRDJEMUZvNE5YNU4xc1FlcjlDMi8xOVNMcDM3M3JhQWd0TDF2OWphMGR3PT0tLTBDYUtNeUJLcXRmNVd4YnorSEhlTWc9PQ%3D%3D--c8889db210d22bb4a96307b74d39c4b64d48777f
+```
+
+**Example**
+
+```
+curl 'https://web-production.lime.bike/api/rider/v2/onboarding/login' \
+-X POST \
+-H 'Content-Type: application/x-www-form-urlencoded; charset=utf-8' \
+-d 'magic_link_token=<your-magic-link-token>'
 ```
 
 ## Get harvestable vehicles
@@ -141,7 +175,7 @@ curl --location --request POST 'https://web-production.lime.bike/api/rider/v1/lo
 
 | Header        | Value        | Mandatory |
 | ------------- | ------------ | :-------: |
-| authorization | Bearer TOKEN | X         |
+| Authorization | Bearer TOKEN | X         |
 
 **Cookie**:
 
@@ -293,7 +327,8 @@ curl --location --request GET 'https://juicer.lime.bike/api/rider/v2/juicer/view
                         "reserved_at": null,
                         "reservation_time": "60",
                         "priority": 0,
-                        "address": ""
+                        "address": "",
+                        "receiving_type": "scooter"
                     }
                 },
                ...
