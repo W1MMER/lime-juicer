@@ -4,7 +4,7 @@
         "type": "juicer_collect_map_view",
         "attributes": {
             "user": {
-                "id": "ZFBYM7MTHH5XW",
+                "id": "<user-id>",
                 "type": "users",
                 "attributes": {
                     "token": "<user-token>",
@@ -15,7 +15,7 @@
                     "given_name": "<user-first-name>",
                     "surname": "<user-last-name",
                     "default_payment_method": null,
-                    "referral_code": "RENBF6T",
+                    "referral_code": "<user-ref-code>",
                     "num_trips": <user-trip-count>,
                     "edu": false,
                     "subscription_item_states": [],
@@ -80,8 +80,8 @@
                     "juicer_first_name": "<juicer-first-name>",
                     "juicer_last_name": "<juicer-last-name>",
                     "juicer_phone_number": "<juicer-phone-number",
-                    "juicer_country_code": "NZ",
-                    "juicer_currency": "NZD",
+                    "juicer_country_code": "<juicer-country-code>",
+                    "juicer_currency": "<juicer-currency>",
                     "juicer_payment_profile": {
                         "id": "<juicer-payment-profile>",
                         "type": "juicer_payment_profiles",
